@@ -13,11 +13,13 @@
         android:layout_height="match_parent"
         android:background="@color/green"
         android:text="Push Me!"
+        android:textSize="40dp"
+        android:textStyle="italic"
         android:textColor="@color/red"
         app:cornerRadius="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="HardcodedText,VisualLintButtonSize,TextContrastCheck" />
+        tools:ignore="HardcodedText,SpUsage,TextContrastCheck,VisualLintButtonSize" />
 </androidx.constraintlayout.widget.ConstraintLayout>
