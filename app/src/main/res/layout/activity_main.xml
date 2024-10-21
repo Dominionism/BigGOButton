@@ -18,5 +18,7 @@
         android:textColor="@color/red"
         android:padding="16dp"
         app:cornerRadius="0dp"
-        tools:ignore="HardcodedText,SpUsage,TextContrastCheck,VisualLintButtonSize" />
+        tools:ignore="HardcodedText,SpUsage,TextContrastCheck,VisualLintButtonSize"
+    />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,10 +1,10 @@
 package edu.uw.ischool.cainglet.biggobutton
+import android.animation.ObjectAnimator
 import android.annotation.SuppressLint
 import kotlin.random.Random
 import android.graphics.Color
 import android.os.Bundle
 import android.widget.Button
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
@@ -23,6 +23,12 @@ class MainActivity : AppCompatActivity() {
             primaryButton.setTextColor(randomTextColor)
             primaryButton.setBackgroundColor(randomBackgroundColor)
             counter++
+
+            ObjectAnimator.ofFloat(primaryButton, "rotation", 0f, 720f).apply {
+                duration = 1000 // Duration of rotation
+                start()
+            }
+
             if (counter == 1) {
                 primaryButton.text = "You have pushed me $counter time!"
             } else if (counter > 1) {
